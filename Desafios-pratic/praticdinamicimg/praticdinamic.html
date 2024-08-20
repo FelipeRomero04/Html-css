@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica Imagem Dinamica</title>
+</head>
+<body>
+    <h1>Paisagem</h1>
+    <p>observe a paisagem em dimensões diferente a depender do dispositivo usado</p>
+    <picture>
+        <source media="(max-width: 620px)" srcset="imagem/paisagem-400.jpg" type="image/jpg">
+        <source media="(max-width: 922px)" srcset="imagem/paisagem-620.jpg" type="image/jpg">
+        <img src="imagem/paisagem-900.jpg" alt="paisagem-desktop">
+    </picture>
+
+    <!--OBSERVAÇÕES
+    USAR A LARGURA COMO PARAMETRO PARA A MAX-WIDTH E IR AJEITANDO ATÉ QUE NÃO HAJA BARRA DE ROLAGEM LATERAL
+    AS DIMENSÕES DEVEM ESTAR EM ORDEM CRESCENTE
+    SE ATENTAR AO NOME DO ARQUIVO E AO TYPE
+    -->
+    
+    <h1>Reproduzindo audios</h1>
+    <p>clique para reproduzir a música abaixo:</p>
+    <audio preload="metadata" controls ><!--autoplay so funciona com preload auto-->
+        <source src="midias/Swimming Lessons - Bail Bonds.mp3" type="audio/mpeg">
+        <source src="midias/Swimming Lessons - Bail Bonds.mp3" type="audio/ogg">
+        <source src="midias/Swimming Lessons - Bail Bonds.mp3" type="audio/wav">
+        <p>Infelizemente seu navegador não tem compatibilidade com o formato do audio <a href="midias/Swimming Lessons - Bail Bonds.mp3" rel="external">clique aqui</a> para baixar</p>
+    </audio>
+
+
+    <!--Formatos de audios:mp3(mpeg), ogg, wav(arquivo pesado)-->
+    
+    
+
+    
+</body>
+</html>

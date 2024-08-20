@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('../fonts/IDroid.otf') format('opentype'); 
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--cor1: #ebe5c5;
+--cor2: #83e193;
+--cor3: #3ddc84;
+--cor4: #2fa866;
+--cor5: #1a5c37;
+--cor6: #063d1e;
+
+--fonte-destaque: 'Bebas Neue', cursive;
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-android: 'Android', 'cursive', Times, serif;
+}
+
+body {
+    background-color: var(--cor1);
+    
+}
+
+p {
+    margin: 24px 0px;
+    text-indent: 30px;
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    line-height: 2.2em;
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
+    color: white;
+    text-align: center;
+    min-height: 140px;
+    padding-top: 20px;
+    
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 18px;
+    font-size: 2.6em;
+    font-weight: normal;
+    text-shadow:  3px 3px 4px rgba(0, 0, 0, 0.471);
+    
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    max-width: 450px;
+    margin: auto;
+    padding-bottom: 12px;
+    font-size: 1.1em;
+    text-shadow:  3px 3px 4px rgba(0, 0, 0, 0.471);
+    
+}
+
+nav {
+    background-color: #063d1e;
+    padding: 10px;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.471);
+    
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    transition: 0.3s ease-out; 
+    /* ou transition-duration: 0.3; porem sem o efeito do 'ease-out' */
+}
+
+nav a:hover {
+    color: var(--cor6);
+    background-color: var(--cor3);
+    border-radius: 7px;
+    padding: 5px;
+
+}
+
+nav.video {
+    background-color: var(--cor6);
+    margin: 0px -15px;
+    padding-bottom: 57%;
+
+    position: relative;
+}
+
+nav.video > iframe {
+    
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    max-width: 80%;
+    padding: 15px;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #053018      ;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    color: var(--cor6);
+    background-image: linear-gradient(to right, var(--cor2), transparent 70%);
+    padding: 1px 7px;
+    border-radius: 3px;
+}
+
+main strong {
+    color: var(--cor6 );
+}
+
+main a {
+    background-color: var(--cor3);
+    color: var(--cor6);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+main a:hover {
+    background-color: var(--cor5);
+    color: var(--cor2);
+    
+}
+
+.external::after {
+    content: '\1F517\00A0';
+}
+/* tirar o U+ do codigo do emoji */
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+aside {
+    margin-top: 20px;
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.458);
+}
+
+aside > h3 {
+    color: white;
+    background-color: var(--cor6);
+    font-weight: bold;
+    padding: 7px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 8px 8px 0px 0px;
+    
+}
+aside > ul {
+   list-style-type: '\2714\00A0\00A0'; 
+   list-style-position: inside;
+   columns: 2;
+   word-break: break-all;
+   
+}
+
+
+
+/* list-style-position: inside; faz as bolinhas entrarem para dento da box */
+/* colocar as configuraçoes do final do video e escreve no caderno sobre as lista (columns,...) */
+
+footer {
+    background-color: var(--cor6);
+    margin-top: 50px;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+
+}
+ 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     /* : = pseudo-class
+        :: = pseudo-elements
+        > = children */
+
+
+
+        body {
+            font-family: 'Times New Roman', Times, sans-serif;
+        }
+        div {
+            width: 100px;
+        }
+
+        div > p {
+            display: none;        
+        }
+        /*Faz o texto desaparecer*/
+        div:hover {
+            color: red;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: lightsalmon; 
+            color: white;
+            width: 300px;
+               
+
+        }
+        /*diplay-block - Faz o texto aparecer*/
+         
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse em cima do texto abaixo</p>
+    <div>
+        Este texto aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    
+</body>
+</html>

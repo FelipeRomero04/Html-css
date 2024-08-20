@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sedan+SC&display=swap');
+
+body {
+    margin: auto 190px auto 190px;
+    background-color: #3D3B3C;
+    font: normal 1em Arial, Helvetica, sans-serif
+}
+
+header {
+    font-weight: bold;
+    font-family: 'Dm Serif Display','Times New Roman', Times, serif ;
+    text-indent: 0;
+}
+
+header > h2 {
+    font-size: 23px;
+    font-weight: normal;
+    position: relative;
+    bottom: 13px;
+    margin-bottom: 1.5em;     
+    
+}
+
+main {
+    background-color: white;
+    text-align: justify;
+    text-indent: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+aside > p {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(94, 94, 94);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+aside > #lipenews {
+    color: black;
+    font-size: 16px;
+}
+
+article > h3 {
+    font: bold 25px Arial, sans-serif;
+}
+
+nav > a > img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 1px 25px 1px ;
+    background-color: rgba(128, 128, 128, 0.112);
+    padding: 8px 90px 8px 90px;
+    border-radius: 15px;
+    transition: background-color 0.4s ease;
+   
+}
+
+
+nav > a > #zapzap:hover {
+    background-color: green;
+}
+
+nav > a > #facebook:hover {
+    background-color: #2f52a2;
+}
+
+nav > a > .insta:hover {
+    background-image: linear-gradient(to right, #DE0E98  , #FF4D66 , #FE6E49 , #FDDC71 );
+    
+}
+
+
+
+#pedra {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+}
+
+section > p {
+    color: rgb(95, 93, 93);
+    font-size: 13px;
+    margin: 10px auto 30px 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

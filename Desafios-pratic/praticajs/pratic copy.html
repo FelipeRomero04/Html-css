@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            input#simb1 {
+                position:absolute;
+                top: 120px;
+                left: 120px;
+
+
+
+            }
+
+
+
+
+
+
+
+
+      
+       
+
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora 2</h1>
+<input type="number" name="cx1" id="cx1"> 
+<input type="number" name="cx2" id="cx2">
+<input type="button" value="Adição" onclick="adicao()">
+<input type="button" value="Multiplicar" onclick="vezes()">
+<input id="simb1" type="button" value="+" onclick="mais()">
+<input id=simb2 type="button" value="X" onclick="vzs()">
+<input id=simb3 type="button" value="/" onclick="dividir()">
+<input id="simb4" type="button" value="-" onclick="subtrair()">
+<input id="numb1" type="button" value="1" onclick="um()">
+<input id="numb2" type="button" value="2" onclick="dois()">
+<input id="numb3" type="button" value="3" onclick="tres()">
+<input id="numb4" type="button" value="4" onclick="quatro()">
+<input id="numb5" type="button" value="5" onclick="cinco()">
+<input id="numb6" type="button" value="6" onclick="seis()">
+<input id="numb7" type="button" value="7" onclick="sete()">
+<input id="numb8" type="button" value="8" onclick="oito()">
+<input id="numb9" type="button" value="9" onclick="nove()">
+<div id="res">Resultado</div>
+
+<script>
+    function adicao() {
+        var cxx1 = document.getElementById('cx1');
+        var cxx2 = document.getElementById('cx2');
+        var res = document.getElementById('res');
+        var n1 = Number(cxx1.value);
+        var n2 = Number(cxx2.value);
+        var s = n1 + n2;
+        res.innerHTML = `O Resultado da adição é: ${s}`;
+    }
+
+    function vezes() {
+        var cxx1 = document.getElementById('cx1');
+        var cxx2 = document.getElementById('cx2');
+        var res = document.getElementById('res');
+        var n1 = Number(cxx1.value);
+        var n2 = Number(cxx2.value);
+        var vz = n1 * n2;
+        res.innerHTML = `O resultado da multiplicação é: ${vz}`;
+    }
+</script>
+
+    
+        
+
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+    
+
+     
+</body>
+</html>

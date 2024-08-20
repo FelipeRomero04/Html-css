@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+
+            background: green;
+            color:white;
+            height: 200px;
+            width: 200PX;   
+            line-height: 200px;
+            text-align: center;
+           
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="area"> Clique Aqui </div>
+        
+    <script>
+         var a= document.getElementById('area')
+        a.addEventListener ('click', clique)
+       
+        a.addEventListener ('mouseout', sair)
+       
+
+        function clique() {
+            
+            a.innerHTML= 'Ratomanocu'
+            a.style.background= "red"  
+        
+
+        }
+
+
+        
+
+        function sair() {
+            a.innerHTML = 'Clique Aqui'
+            a.style.background = 'green'
+        }
+
+      
+
+
+
+    </script>
+</body>
+</html>
