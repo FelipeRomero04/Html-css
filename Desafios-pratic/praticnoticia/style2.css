@@ -10,9 +10,11 @@
 }
 
 body {
-    background-color: rgb(62, 62, 62); 
+    background-color: #011F26; 
 }
 
+/* Tentar encontrar um paleta de cores */
+/* colocar outra cor de fundo, provavelmenente por um azul escuro */
 /* como tornar a borda do body sumir ao diminuir a tela? */
 
 
@@ -23,32 +25,38 @@ main {
     padding: 20px;
 }
 
-section h1 {
-    margin-bottom: 30px;
-    font-family: Arial , sans-serif;
-    font-size: 2.2em;
-    max-width: 90%;
-}
+@media (min-width: 500px) and (max-width: 690px) {
+    main {
+        max-width: 85%;
+    }
 
-section p {
-    line-height: 1.3em;
-    color: rgb(101, 101, 101);
-}
-
-section > p > strong {
-    color: rgb(255, 102, 0);
 }
 
 img {
-  display: block;
-  margin: auto;
-  max-width: 100%;
-  min-width: 10%;
-  margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    min-width: 10%;
 }
+
+div h1 {
+    max-width: 70%;
+    color: white;
+    font: bold 2.7em 'Roboto', Arial, Helvetica, sans-serif;
+
+}
+
+.conteiner {
+    margin: -12px auto auto -11px;
+    border: 11px solid #011F26;
+    padding: 1px;
+}
+
 
 .image {
     position: relative;
+    margin-bottom: 20px;
+   
 }
 
 .image-text {
@@ -57,11 +65,6 @@ img {
     top: 60%;
     left: 4%;
     text-align: left;
-}
-div h1 {
-    max-width: 70%;
-    color: white;
-    font: bold 2.7em 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 1024px) {
@@ -100,37 +103,72 @@ div h1 {
     }
 }
 
-/* anotar o que esta a cima  */
+section p {
+    font-size: 1.1em;
+    text-indent: 1.2em;
+    line-height: 2em;
+    margin-bottom: 3em;
+     color: rgb(101, 101, 101);
+   
+}
 
-#legenda {
-    font-size: 13px;
-    color: gray;
-    max-width: 816px;
+section > p > strong {
+    color: rgb(255, 102, 0);
+    text-decoration: underline;
 }
 
 article p {
-    font-family: Arial, Helvetica, sans-serif;
+    font: normal 1.2em 'Roboto', Helvetica, sans-serif;
+    color: #3c3c3b;
     margin: 20px 0 20px 0;
+    line-height: 1.6em;
     text-align: justify;
-    font-size: 1.2em;
-    text-indent: 1.1em;
+    text-indent: 2em;
 }
 
 article h2 {
-    font: bold 1.3em Verdana, Geneva, Tohoma, sans-serif;
+    font: 900 28px 'Roboto', Verdana, sans-serif;
+    color: #3c3c3b;
+   
 }
 
 blockquote {
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 3px;
-    font-weight: bold;
-    color: rgb(185, 125, 5);
+   
+    font: bolder 1.2em 'Roboto', Arial, sans-serif;
+    text-indent: 1.2em;
+    font-style: italic;
+    color: rgba(5, 33, 71, 0.756);
+    margin: 30px;
 }
 
-aside {
-    list-style-position: inside;
+.pepe {
+    
+    border-radius: 8px;
 }
+
+.pepe-text {
+    margin: 3px auto 3em auto;
+    font-size: 0.7em;
+    color: #474746dc;
+    max-width: 600px;
+}
+
+
+ul {
+    list-style-position: inside;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.little {
+    display: flex;
+    justify-content: center;
+}
+
+/* justify-content centraliza de forma horizontal, align-items de forma vertical */
+
+
+
 
 
 
