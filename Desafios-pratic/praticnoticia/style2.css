@@ -142,8 +142,15 @@ blockquote {
 }
 
 .pepe {
-    
+    filter: grayscale(100%);
     border-radius: 8px;
+    transition: 0.3s ease-out;
+}
+
+.pepe:hover {
+    filter: grayscale(0%);
+    
+    
 }
 
 .pepe-text {
