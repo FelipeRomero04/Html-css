@@ -20,14 +20,14 @@ body {
 
 main {
     background-color: white;
-    max-width: 70%;
+    max-width: 75%;
     margin: auto;
     padding: 20px;
 }
 
-@media (min-width: 500px) and (max-width: 690px) {
+@media (min-width: 375px) and (max-width: 690px) {
     main {
-        max-width: 85%;
+        max-width: 90%;
     }
 
 }
@@ -104,13 +104,20 @@ div h1 {
 }
 
 section p {
-    font-size: 1.1em;
-    text-indent: 1.2em;
+    font-size: 0.9em;
+    text-indent: 1em;
     line-height: 2em;
-    margin-bottom: 3em;
-     color: rgb(101, 101, 101);
-   
+    color: rgb(101, 101, 101);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+span {
+    font-size: 12px;
+    margin-left: 14px;
+    color: #4F5257;
+    
+}
+
 
 section > p > strong {
     color: rgb(255, 102, 0);
