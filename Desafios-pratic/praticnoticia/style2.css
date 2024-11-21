@@ -32,6 +32,16 @@ main {
 
 }
 
+@media (max-width: 375px) {
+    main p {
+        font-size: 0.7em;
+    }
+
+
+
+}
+       
+    
 img {
     display: block;
     margin: auto;
@@ -167,6 +177,20 @@ blockquote {
     max-width: 600px;
 }
 
+a {
+    background-color: #08aed3cb;
+    padding: 0px 6px 0px 6px;
+    text-decoration: none;
+    border-radius: 4px;
+    
+  /*ver uma cor boa dps;*/
+
+}
+
+a:visited {
+    
+    color: #474746dc
+}
 
 ul {
     list-style-position: inside;
