@@ -23,6 +23,7 @@ main {
     max-width: 75%;
     margin: auto;
     padding: 20px;
+
 }
 
 @media (min-width: 375px) and (max-width: 690px) {
@@ -31,16 +32,6 @@ main {
     }
 
 }
-
-@media (max-width: 375px) {
-    main p {
-        font-size: 0.7em;
-    }
-
-
-
-}
-       
     
 img {
     display: block;
@@ -122,10 +113,10 @@ section p {
 }
 
 span {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    margin-left: 14px;
+    margin-left: 13px;
     color: #4F5257;
-    
 }
 
 
@@ -202,8 +193,22 @@ ul {
     display: flex;
     justify-content: center;
 }
-
 /* justify-content centraliza de forma horizontal, align-items de forma vertical */
+
+@media (max-width: 375px) {
+    iframe {
+    max-width: 265px;
+    max-height: 149px;
+    
+    }
+}
+
+@media (max-width: 470px) {
+    iframe{
+        max-width: 390px;
+        max-height: 220px;
+    }
+}
 
 
 
